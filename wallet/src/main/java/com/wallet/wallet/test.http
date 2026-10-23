@@ -1,0 +1,34 @@
+GET http://localhost:8080/api/accounts/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2YWxpZGF0ZSIsImlhdCI6MTc3MTc2MTQxMCwiZXhwIjoxNzcxODQ3ODEwfQ.qpQK0N1LlRzQfJ4mhvWb1kgWsVmTSr20XP696qr6t9M
+
+### Create Alice
+POST http://localhost:8080/api/accounts/create?username=Alice&balance=1000
+
+###
+
+### Create Bob
+POST http://localhost:8080/api/accounts/create?username=Bob&balance=500
+
+###
+
+### Deposit to Alice
+POST http://localhost:8080/api/accounts/deposit?id=111&amount=200
+
+###
+
+### Transfer from Alice to Bob
+POST http://localhost:8080/api/accounts/transfer?fromId=1&toId=2&amount=150000000
+
+###
+
+### Get Alice Transaction History (Paginated)
+GET http://localhost:8080/api/accounts/1/transactions?page=0&size=5
+
+###
+
+### Get Bob Transaction History (Paginated)
+GET http://localhost:8080/api/accounts/6/transactions?page=0&size=5
+
+
+GET /api/accounts/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2YWxpZGF0ZSIsImlhdCI6MTc3MTc2MTQxMCwiZXhwIjoxNzcxODQ3ODEwfQ.qpQK0N1LlRzQfJ4mhvWb1kgWsVmTSr20XP696qr6t9M

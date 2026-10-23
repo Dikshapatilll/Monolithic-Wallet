@@ -1,0 +1,2 @@
+
+GET http://localhost:8081/auth/validate-token?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0aW5nIiwiaWF0IjoxNzcxMzMxMDk2LCJleHAiOjE3NzE0MTc0OTZ9.vTH7IsgU3PFHdEY8500bZeEVT9H-IxSTUbfPdZvKqMw
